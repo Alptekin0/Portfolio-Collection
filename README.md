@@ -18,7 +18,7 @@ Farklı tasarım ve düzen fikirleri için ilham kaynağı olabilir.
 
 ### Canlı Önizleme:
 Projeler GitHub Pages üzerinden yayınlandığında buraya linkler eklenecektir:
-[Link yazısı](https://ornek.com)
+[porföy 1](https://alptekin0.github.io/Portfolio-Collection/portfolyo/)
 
 
 
