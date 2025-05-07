@@ -1,0 +1,962 @@
+* {
+     margin: 0;
+     padding: 0;
+}
+
+html {
+     scroll-behavior: smooth;
+}
+
+body {
+     color: white;
+     overflow-y: scroll;
+     font-family: 'Recursive', monospace;
+}
+
+.page {
+     /* Tüm sayfalara uygula */
+     height: 100vh;
+     width: 100%;
+}
+
+
+/*-----------------------------------------------------------------------------------------------------------------*/
+
+/*!  SAYFA1 */
+.page1 {
+     background-color: black;
+}
+
+
+.header {
+     position: absolute;
+     top: 0;
+     z-index: 1000;
+     width: 100%;
+     height: 10vh;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     backdrop-filter: blur(1px);
+     -webkit-backdrop-filter: blur(1px);
+     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.9);
+
+}
+
+.portfolio {
+     display: inline-block;
+     margin-left: 10%;
+     font-size: 35px;
+     font-weight: 550;
+     opacity: 0;
+     animation: right 1s ease-in-out .1s forwards;
+}
+
+.navbar {
+     margin-right: 5%;
+}
+
+.nav a {
+     display: inline-block;
+     text-decoration: none;
+     font-size: large;
+     color: white;
+     margin-left: 30px;
+     position: relative;
+}
+
+.nav a:nth-child(1) {
+     opacity: 0;
+     animation: top 1s ease-in-out .3s forwards;
+}
+
+.nav a:nth-child(2) {
+     opacity: 0;
+     animation: top 1s ease-in-out .4s forwards;
+}
+
+.nav a:nth-child(3) {
+     opacity: 0;
+     animation: top 1s ease-in-out .5s forwards;
+}
+
+.nav a:nth-child(4) {
+     opacity: 0;
+     animation: top 1s ease-in-out .6s forwards;
+}
+
+.nav a:nth-child(5) {
+     opacity: 0;
+     animation: top 1s ease-in-out .7s forwards;
+}
+
+
+.header .navbar a::after {
+     content: "";
+     position: absolute;
+     width: 0;
+     height: 3px;
+     background: rgb(205, 15, 15);
+     bottom: -3px;
+     left: 0;
+     border-radius: 20px;
+     transition: width 0.5s ease;
+}
+
+.header .navbar a:hover::after {
+     width: 100%;
+     /* Yavaşça genişler */
+}
+
+.page1Content {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     position: absolute;
+     top: 25vh;
+     left: 10%;
+     right: 5%;
+     width: auto;
+     height: 50vh;
+}
+
+.page1Content p {
+     font-size: 25px;
+     opacity: 0;
+     animation: top 1s ease-in-out .9s forwards;
+}
+
+.page1Content h1 {
+     font-size: 40px;
+     opacity: 0;
+     animation: bottom 1s ease-in-out 1s forwards;
+}
+
+.image {
+     margin-right: 10%;
+     border: 5px solid white;
+     border-radius: 50%;
+     box-shadow: 0 0 10px rgb(237, 237, 235);
+     opacity: 0;
+     animation: scale 1s ease-in-out 1.2s forwards;
+}
+
+.image img {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     object-fit: cover;
+     width: 300px;
+     height: 300px;
+     border-radius: 50%;
+}
+
+
+/*-----------------------------------------------------------------------------------------------------------------*/
+
+
+/*!  SAYFA2 */
+.page2 {
+     background-color: rgb(22, 22, 22);
+     color: white;
+     line-height: 1.5;
+}
+
+.contentWrapper {
+     display: flex;
+}
+
+
+.aboutImage {
+     width: 50vh;
+     height: 70vh;
+     position: relative;
+     top: 100px;
+     left: 100px;
+     border: 1px solid white;
+     border-radius: 10px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+
+.aboutImage img {   /* fotograf eklenirse css özellikleri */
+     border-radius: 20px;
+     object-fit: cover;
+     width: 100%;
+     height: 100%;
+}
+
+.aboutMe {
+     width: 100vh;
+     height: 200px;
+     position: relative;
+     top: 100px;
+     left: 20%;
+}
+
+.aboutMe h1 {
+     font-size: 42px;
+     font-weight: 400;
+}
+
+.aboutMe p {
+     font-size: 15px;
+     margin-top: 10px;
+}
+
+.skills {
+     width: 100vh;
+     height: 230px;
+     margin-top: 30px;
+     position: relative;
+     top: 300px;
+     left: -20%;
+}
+
+.titles {
+     display: flex;
+     margin-top: 10px;
+     gap: 60px;
+}
+
+.titles a {
+     text-decoration: none;
+     color: white;
+     font-size: 20px;
+     font-weight: 600;
+     transition: color 0.3s ease;
+}
+
+.titles a:hover {
+     scale: 1.15;
+     color: red;
+     text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+}
+
+.titles .active {
+     color: red;
+}
+
+.text {
+     margin-top: 40px;
+}
+
+.selectionSkills {
+     opacity: 0;
+     animation: top 1s ease-in-out .1s forwards;
+}
+
+.selectionExperience {
+     opacity: 0;
+     animation: bottom 1s ease-in-out .1s forwards;
+}
+
+.selectionEducation {
+     opacity: 0;
+     animation: left 1s ease-in-out .1s forwards;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------*/
+
+
+/*! PAGE 3 */
+.page3 {
+     background-color: black;
+     color: white;
+     line-height: 1.5;
+}
+
+.page3Content h1{
+     width: 50%;
+     height: 120px;
+}
+
+.page3Content {
+     position: relative;
+     top: 100px;
+     left: 80px;
+     font-size: 35px;
+     width: 80%;
+}
+
+.cards {
+     width: 1050px;
+     height: 350px;
+     display: flex;
+     flex-direction: row;
+     gap: 80px;
+}
+
+.card1,
+.card2,
+.card3 {
+     backdrop-filter: blur(5px);
+     background-color: rgba(0, 0, 0, 0.6);
+     width: 450px;
+     height: 270px;
+     margin-top: 50px;
+     border-radius: 50px;
+     font-size: 15px;
+     display: flex;
+     flex-direction: column;
+     align-items: left;
+     justify-content: center;
+     padding: 5px 20px;
+     gap: 20px;
+     border: 1px solid rgb(202, 176, 176);
+}
+
+.card1:hover,
+.card2:hover,
+.card3:hover {
+     background-color: rgb(105, 9, 9);
+     scale: 1.03;
+     animation: card-animation 1s ease-in-out forwards;
+}
+
+
+
+/*-----------------------------------------------------------------------------------------------------------------*/
+
+
+
+/*! PAGE 4*/
+
+.page4 {
+     background-color: rgb(22, 22, 22);
+}
+
+
+.contactMe {
+     position: relative;
+     top: 20%;
+     left: 20px;
+     font-size: 35px;
+     width: 40%;
+}
+
+.page4Content {
+     position: relative;
+     top: 25%;
+     left: 30px;
+     font-size: 18px;
+     width: 40%;
+}
+
+.page4Content i {
+     margin-right: 20px;
+     margin-top: 10px;
+}
+
+.links {
+     position: relative;
+     top: 28%;
+     left: 30px;
+     width: 300px;
+     height: 100px;
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+}
+
+.links a {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     text-decoration: none;
+     color: black;
+     width: 40px;
+     height: 40px;
+     margin-left: 20px;
+     font-size: 30px;
+     border: 1px solid black;
+     box-shadow: 0 0 3px 0 white;
+     background-color: white;
+     border-radius: 50%;
+     padding: 3px 3px;
+}
+
+.links a:hover {
+     background-color: black;
+     color: white;
+     scale: 1.1;
+     box-shadow: 0 0 5px 0 white;
+     border: 1px solid white;
+}
+
+.page4Content i {
+     font-size: 20px;
+     color: rgb(162, 5, 5);
+}
+
+.CV {
+     position: relative;
+     top: 30%;
+     left: 30px;
+     font-size: 18px;
+     width: 150px;
+     height: 60px;
+     border-radius: 30px;
+}
+
+.CV:hover {
+     background-color: black;
+     color: white;
+     scale: 1.05;
+     box-shadow: 0 0 5px 0 white;
+     border: 1px solid white;
+     cursor: pointer;
+}
+
+
+.form {
+     position: relative;
+     left: 40%;
+     bottom: 25%;
+     height: 60%;
+     width: 50%;
+     display: flex;
+     flex-direction: column;
+     padding: 20px 20px;
+}
+
+
+.form input {
+     width: 80%;
+     height: 30px;
+     margin: 10px;
+     padding: 3px;
+     font-size: 15px;
+     font-weight: 700;
+}
+
+.form input:hover {
+     box-shadow: 3px 3px 0 0 rgb(167, 68, 68);
+     scale: 1.05;
+
+}
+
+.Message {
+     margin-left: 10px;
+     margin-top: 10px;
+     width: 80%;
+     height: 200px;
+     resize: none;
+     padding: 3px;
+     font-size: 15px;
+     font-weight: 600;
+}
+
+.Message:hover {
+     box-shadow: 3px 3px 0 0 rgb(167, 68, 68);
+     scale: 1.05;
+
+}
+
+.submitBtn {
+     margin-top: 20px;
+     margin-left: 10px;
+     font-size: 18px;
+     width: 150px;
+     height: 60px;
+     border-radius: 30px;
+}
+
+.submitBtn:hover {
+     background-color: black;
+     color: white;
+     scale: 1.05;
+     box-shadow: 0 0 10px 0 white;
+     border: 1px solid white;
+     cursor: pointer;
+}
+
+
+
+/*!  Responsive sağlamak için hamburger menü */
+
+.menuBar {
+     font-size: 30px;
+     position: fixed;
+     right: 20px;
+     top: 20px;
+     z-index: 1;
+}
+
+
+.hamburgerHeader {
+     width: 50%;
+     height: 100%;
+     position: fixed;
+     right: 0;
+     z-index: 1;
+     display: flex;
+     justify-content: center;
+     background-color: brown;
+}
+
+.NavbarR {
+     margin-top: 100px;
+     width: 100%;
+     height: 500px;
+}
+
+.NavbarR a {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin-top: 7%;
+     height: 10%;
+     width: 100%;
+     text-decoration: none;
+     font-size: 20px;
+     font-weight: 600;
+     color: white;
+}
+
+.NavbarR a:hover {
+     background-color: black;
+     font-size: 22px;
+}
+
+.xMark {
+     position: inherit;
+     right: 20px;
+     top: 20px;
+     font-size: 30px;
+}
+
+.alptekin {
+     position: inherit;
+     bottom: 0;
+     right: 0;
+     font-size: 12px;
+}
+
+
+
+/*----------------------------------------------RESPONSİVE-------------------------------------------------------------------*/
+
+
+@media screen and (max-width : 768px) {
+     .portfolio {
+          position: relative;
+          left: 10px;
+          top: 20px;
+          font-size: 20px;
+     }
+
+     .page1Content p {
+          font-size: 15px;
+     }
+
+     .page1Content h1 {
+          font-size: 20px;
+     }
+
+     .page1Content {
+          gap: 80px;
+          width: auto;
+     }
+
+     .image img {
+          max-width: 100%;
+          height: auto;
+     }
+
+
+     /* sayfa2 */
+
+     .aboutImage {
+          display: none;
+     }
+
+     .aboutMe {
+          width: 95%;
+          left: 2.5%;
+          top: 30px;
+     }
+
+     .aboutMe h1 {
+          font-size: 24px;
+     }
+
+     .aboutMe p {
+          font-size: 14px;
+     }
+
+     .skills {
+          width: 95%;
+          left: 2.5%;
+          top: 30px;
+          margin-left: 40px;
+     }
+
+     .titles {
+          gap: 30px;
+          margin-top: 30%;
+     }
+
+     .titles a {
+          font-size: 14px;
+     }
+
+     .text {
+          font-size: 12px;
+     }
+
+     .contentWrapper {
+          display: block;
+     }
+
+
+     /* Page 3 */
+
+     .page3Content {
+          top: 50px;
+          left: 15px;
+          font-size: 22px;
+          width: 50%;
+      }
+
+      .page3Content h1{
+          font-size: 20px;
+          margin-bottom: 40px ;
+      }
+      
+      .cards {
+          flex-direction: column;
+          gap: 15px;
+          padding: 0 10px;
+          width: 220px;
+      }
+      
+      .card1, .card2, .card3 {
+          width: 100%;
+          max-width: 100%;
+          min-height: 130px;
+          padding: 20px;
+          margin: 0 !important;
+      }
+      
+      .card1:hover, 
+      .card2:hover, 
+      .card3:hover {
+          transform: scale(1.02);
+      }
+
+
+      /*! PAGE 4*/
+     
+     .contactMe {
+          font-size: 25px;
+          position: relative;
+          top: 10px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 90%;
+     }
+     
+     .page4Content {
+          position: relative;
+          top: 60%;
+          font-size: 16px;
+          width: 20%;
+     }
+     
+     .page4Content i {
+          margin-right: 10px;
+          margin-top: 10px;
+     }
+     
+     .links {
+          position: relative;
+          top: 65%;
+          width: 20px;
+     }
+     
+     .CV {
+          position: relative;
+          top: 63%;
+          left: 30px;
+     }
+     
+     .form {
+          position: relative;
+          left: 5%;
+          margin-top: 20px;
+          height: 60%;
+          width: 90%;
+          display: flex;
+          flex-direction: column;
+          padding: 20px 20px;
+     }
+     
+     .submitBtn:hover {
+          scale: 1.03;
+     }
+
+}
+
+
+@media screen and (max-width: 480px) {
+
+     .portfolio {
+          position: relative;
+          left: 10px;
+          top: 20px;
+          font-size: 20px;
+     }
+
+     .page1Content p {
+          font-size: 15px;
+     }
+
+     .page1Content h1 {
+          font-size: 20px;
+     }
+
+     .page1Content {
+          gap: 80px;
+          width: 100%;
+     }
+
+     .image img {
+          max-width: 150px;
+          height: 150px;
+     }
+
+
+     /* sayfa2 */
+
+     .aboutImage {
+          display: none;
+     }
+
+     .aboutMe {
+          width: 95%;
+          left: 2.5%;
+          top: 30px;
+     }
+
+     .aboutMe h1 {
+          font-size: 24px;
+     }
+
+     .aboutMe p {
+          font-size: 14px;
+     }
+
+     .skills {
+          width: 95%;
+          left: 2.5%;
+          top: 30px;
+          margin-left: 40px;
+     }
+
+     .titles {
+          gap: 30px;
+          margin-top: 30%;
+     }
+
+     .titles a {
+          font-size: 14px;
+     }
+
+     .text {
+          font-size: 12px;
+     }
+
+     .contentWrapper {
+          display: block;
+     }
+
+
+     /* Page 3 */
+
+     .page3Content {
+          top: 50px;
+          left: 15px;
+          font-size: 22px;
+          width: 50%;
+      }
+
+      .page3Content h1{
+          font-size: 20px;
+          margin-bottom: 40px ;
+      }
+      
+      .cards {
+          flex-direction: column;
+          gap: 15px;
+          padding: 0 10px;
+          width: 220px;
+      }
+      
+      .card1, .card2, .card3 {
+          width: 100%;
+          max-width: 100%;
+          min-height: 130px;
+          padding: 20px;
+          margin: 0 !important;
+      }
+      
+      .card1:hover, 
+      .card2:hover, 
+      .card3:hover {
+          transform: scale(1.02);
+      }
+
+
+      /*! PAGE 4*/
+     
+     .contactMe {
+          font-size: 25px;
+          position: relative;
+          top: 10px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 90%;
+     }
+     
+     .page4Content {
+          position: relative;
+          top: 60%;
+          font-size: 16px;
+          width: 20%;
+     }
+     
+     .page4Content i {
+          margin-right: 10px;
+          margin-top: 10px;
+     }
+     
+     .links {
+          position: relative;
+          top: 65%;
+          width: 20px;
+     }
+     
+     .CV {
+          position: relative;
+          top: 63%;
+          left: 30px;
+     }
+     
+     .form {
+          position: relative;
+          left: 5%;
+          margin-top: 20px;
+          height: 60%;
+          width: 90%;
+          display: flex;
+          flex-direction: column;
+          padding: 20px 20px;
+     }
+     
+     .submitBtn:hover {
+          scale: 1.03;
+     }
+
+
+
+}
+
+
+
+
+
+
+/*-----------------------------------------------------------------------------------------------------------------*/
+/*! KEYFRAMES */
+
+@keyframes scale {
+     0% {
+          opacity: 0;
+          scale: 0.8;
+     }
+
+     100% {
+          opacity: 1;
+          scale: 1;
+     }
+}
+
+@keyframes top {
+     0% {
+          opacity: 0;
+          transform: translateY(-30px);
+     }
+
+     100% {
+          opacity: 1;
+          transform: translateY(0);
+     }
+}
+
+@keyframes bottom {
+     0% {
+          opacity: 0;
+          transform: translateY(30px);
+     }
+
+     100% {
+          opacity: 1;
+          transform: translateY(0);
+     }
+}
+
+@keyframes right {
+     0% {
+          opacity: 0;
+          transform: translateX(-30px);
+     }
+
+     100% {
+          opacity: 1;
+          transform: translateX(0);
+     }
+}
+
+@keyframes left {
+     0% {
+          opacity: 0;
+          transform: translateX(30px);
+     }
+
+     100% {
+          opacity: 1;
+          transform: translateX(0);
+     }
+}
+
+
+@keyframes card-animation {
+     0% {
+          transform: translateY(-10px);
+     }
+
+     100% {
+          transform: translateY(0);
+     }
+}
+
+
+@keyframes fadeOut {
+     from {
+          opacity: 1;
+          transform: translateY(0);
+     }
+
+     to {
+          opacity: 0;
+          transform: translateY(-10px);
+     }
+}
+
+.fade-out {
+     animation: fadeOut 0.3s ease forwards;
+}
