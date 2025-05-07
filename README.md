@@ -17,8 +17,9 @@ HTML/CSS/JS temellerini pekiştirmek isteyenler için örnek kod yapısı sağla
 Farklı tasarım ve düzen fikirleri için ilham kaynağı olabilir.
 
 ### Canlı Önizleme:
-Projeler GitHub Pages üzerinden yayınlandığında buraya linkler eklenecektir:
-[porföy 1](https://alptekin0.github.io/Portfolio-Collection/portfolyo/)
+Projeler GitHub Pages üzerinden yayınlandığında buraya linkler eklenecektir:  
+[portfolio](https://alptekin0.github.io/Portfolio-Collection/portfolyo/)  
+[portfolio 2](https://alptekin0.github.io/Portfolio-Collection/portfolyo 2/)  
 
 
 
