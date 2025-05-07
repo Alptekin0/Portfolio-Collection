@@ -19,7 +19,7 @@ Farklı tasarım ve düzen fikirleri için ilham kaynağı olabilir.
 ### Canlı Önizleme:
 Projeler GitHub Pages üzerinden yayınlandığında buraya linkler eklenecektir:  
 [portfolio](https://alptekin0.github.io/Portfolio-Collection/portfolyo/)  
-[portfolio 2](https://alptekin0.github.io/Portfolio-Collection/portfolyo 2/)  
+[portfolio 2](https://alptekin0.github.io/Portfolio-Collection/Portfolio%2/)  
 
 
 
