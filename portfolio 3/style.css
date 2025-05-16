@@ -1,0 +1,947 @@
+*{
+     margin: 0;
+     padding: 0;
+     scroll-behavior: smooth;
+     font-family: 'Recursive', monospace;
+}
+
+html{
+     font-size: 14px;
+     overflow-x: hidden;
+}
+
+body{
+     color: white;
+     line-height: 1.5;
+}
+
+section{
+     width: 100%;
+     height: 100vh;
+}
+
+/*! ****************************************************************************************************************** */
+
+
+/*! PAGE 1 */
+
+#page1{
+     background-image: url(images/home.jpg);
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+}
+
+.header{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+
+     position: fixed;
+     top: 0;
+     left: 0;
+     background-color: #0a293d;
+     height: 10%;
+     width: 100%;
+     z-index: 1000;
+}
+
+.header p {
+     font-size: 1.5rem;
+     margin: 10% 10%;
+     opacity: 0;
+     animation: top 1s ease .2s forwards;
+}
+
+.header a{
+     color: white;
+     margin: 10% 10%;
+     font-size: 2rem;
+     animation: right 1s ease .4s forwards;
+}
+
+.menu{
+     background-color: #1c4b5b;
+     width: 55%;
+     height: 100%;
+
+     position: fixed;
+     right: 0;
+
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     z-index: 1000;
+}
+
+.menu a{
+     margin-top: 25%;
+
+     text-decoration: none;
+     font-size: 1.3rem;
+     color: white;
+     
+}
+
+.menu a:nth-child(1){
+     font-size: 2rem;
+     margin-left: 75%;
+     margin-top: 20%;
+}
+
+.menu a:hover{
+     color: red;
+     scale: 1.02;
+}
+
+.menu i{
+     margin-right: 50px;
+}
+
+.menu p{
+     position: absolute;
+     bottom: 1%;
+     right: 1%;
+
+     font-size: 0.8rem;
+}
+
+.page1Content{
+     position: absolute;
+     top: 20%;
+     left: 5%;
+
+     height: 55%;
+     width: 90%;
+}
+
+.page1Content h1{
+     font-size: 2rem;
+     font-weight: 800;
+     opacity: 0;
+     animation: top 1s ease .6s forwards;
+}
+
+.page1Content h3{
+     display: inline-block;
+     font-size: 1.3rem;
+     margin-top: 5%;
+     margin-bottom: 4%;
+}
+
+.page1Content h3 span{
+     display: inline-block;
+     opacity: 0;
+     animation: opacity 4s forwards infinite alternate-reverse;
+}
+h3 span:nth-child(1){
+     opacity: 0;
+     animation-delay: .8s;
+}
+h3 span:nth-child(2){
+     animation-delay: 1s;
+}
+h3 span:nth-child(3){
+     animation-delay: 1.2s;
+}
+h3 span:nth-child(4){
+     animation-delay: 1.4s;
+}
+h3 span:nth-child(5){
+     animation-delay: 1.6s;
+}
+h3 span:nth-child(6){
+     animation-delay: 1.8s;
+}
+h3 span:nth-child(7){
+     animation-delay: 2s;
+}
+h3 span:nth-child(8){
+     animation-delay: 2.2s;
+}
+h3 span:nth-child(9){
+     animation-delay: 2.4s;
+}
+h3 span:nth-child(10){
+     animation-delay: 2.6s;
+}
+h3 span:nth-child(11){
+     animation-delay: 2.8s;
+}
+h3 span:nth-child(12){
+     animation-delay: 3s;
+}
+h3 span:nth-child(13){
+     animation-delay: 3.2s;
+}
+h3 span:nth-child(14){
+     animation-delay: 3.4s;
+}
+h3 span:nth-child(15){
+     animation-delay: 3.6s;
+}
+h3 span:nth-child(16){
+     animation-delay: 3.8s;
+}
+h3 span:nth-child(17){
+     animation-delay: 4s;
+}
+
+
+
+.page1Content p{
+     line-height: 2;
+     opacity: 0;
+     animation: top 1s ease 1.4s forwards;
+}
+
+.page1ContentButtons{
+     width: 80%;
+     height: 15%;
+
+     margin-top: 8%;
+     
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+}
+
+.page1ContentButtons button{
+     height: 100%;
+     width: 40%;
+     border-radius: 1rem;
+}
+
+.DownloadCV{
+     font-size: 1.1rem;
+     background-color: #3498db; /* Başlangıçta mavi */
+     color: white;
+     transition: background-color 0.3s ease-in;
+     opacity: 0;
+     animation: bottom 1s ease 1.6s forwards;
+}
+
+.DownloadCV:hover{
+     cursor: pointer;
+     background-color: white;
+     color: black;
+     scale: 1.01;
+}
+
+.Talk{
+     font-size: 1.1rem;
+     opacity: 0;
+     animation: right 1s ease 1.8s forwards;
+}
+
+.Talk:hover{
+     cursor: pointer;
+     background-color: #3498db ;
+     color: white;
+     scale: 1.01;
+}
+.links{
+     display: flex;
+     justify-content: flex-start;
+     align-items: center;
+     gap: 1rem;
+     margin: 2rem 0;
+     width: 100%;
+     max-width: 300px;
+     position: absolute;
+     bottom: 5%;
+     left: 10%;
+ }
+ 
+ .wrapper {
+     background-color: white;
+     border: 1px solid white;
+     box-shadow: 0 0 10px 0 white;
+     width: 40px;
+     height: 40px;
+     min-width: 40px; 
+     min-height: 40px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border-radius: 50%;
+     transition: all 0.3s ease;
+ }
+.wrapper:nth-child(1) {
+     opacity: 0;
+     animation: left 1s ease 2s forwards;
+ }
+ 
+ .wrapper:nth-child(2) {
+     opacity: 0;
+     animation: bottom 1s ease 2.2s forwards;
+ }
+ 
+ .wrapper:nth-child(3) {
+     opacity: 0;
+     animation: right 1s ease 2.4s forwards;
+ }
+ 
+
+.wrapper:hover {
+     cursor: pointer;
+     background-color: black;
+ }
+ 
+ .wrapper:hover a {
+     color: #00BFFF;
+ }
+ 
+ .links a {
+     font-size: 1.7rem;
+     color: black;
+     transition: color 0.3s ease;
+ }
+ 
+
+
+
+
+
+
+/*! PAGE 2 */
+#page2{
+     background-color: #0B2A42;
+     overflow: hidden;
+}
+
+.animate-on-scroll {
+     opacity: 0;
+}
+.top{     
+     animation: top 1s ease-in-out .3s forwards;
+}
+
+.right{
+     animation: right 1s ease-in-out .5s forwards;
+}
+
+.left{
+     animation: left 1s ease-in-out .7s forwards;
+}
+
+.bottom{
+     animation: bottom 1s ease-in-out .9s forwards;
+}
+.aboutMe{
+     position: relative;
+     width: 90%;
+     height: 100%;
+     margin-left: 5%;
+
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+     margin-top: 15%;
+}
+
+.aboutMe h1{
+     position: absolute;
+     top: 1%;
+     font-size: 3.5rem;
+     opacity: 0;
+}
+
+.image{
+     width: 50%;
+     height: 30%;
+     border-radius: 50%;
+     position: absolute;
+     top: 15%;
+
+     display: flex;
+     align-items: center;
+     justify-content: center;
+
+}
+
+.image img{
+     max-width: 100%;
+     height: 100%;   /*todo  BÜYÜK EKRANLARDA SIKINTI DÜZENLE BÜYÜK EKRANA GEÇİNCE*/
+     border-radius: 50%;
+     border: 1px solid #00BFFF;
+     animation: photo 2.3s ease-in-out .4s infinite forwards alternate;
+}
+
+.aboutMe h3{
+     font-size: 1.5rem;
+
+     position: absolute;
+     top: 45%;
+
+}
+
+
+.aboutMe p{
+
+     position: absolute;
+     top: 52%;
+
+     margin-left: 3%;
+}
+
+
+
+/*! PAGE 3 */
+#page3 {
+     background-color: #071826;
+     min-height: 200vh;
+     overflow: hidden;
+     position: relative;
+ }
+ 
+ .container-wrapper {
+     width: 100%;
+     height: auto;
+     margin-top: 10%;
+     
+     display: flex;
+     align-items: center;
+     justify-content: flex-start;
+     flex-direction: column;
+     
+     position: relative; 
+ }
+ 
+ .container-wrapper h1 {
+     font-size: 2.5rem;
+     text-align: center;
+     color: white;
+     width: 90%;
+     margin-bottom: 2rem;
+ }
+ 
+ .container {
+     width: 80%;
+     margin: 1.5rem 0;
+     padding: 3%;
+     border-radius: 10px;
+     border: 1px solid #00BFFF;
+     overflow: hidden;
+     transition: .2s;
+     background-color: rgba(0, 0, 0, 0.2);
+ }
+ 
+ .container:hover {
+     background: linear-gradient(to right, #071826, #00BFFF);
+     transform: scale(1.02);
+ }
+ 
+ .container p {
+     line-height: 1.4;
+     font-size: 1rem;
+     color: #f0f0f0;
+ }
+ 
+
+
+
+/*! PAGE 4 */
+
+
+#page4{
+     background-color: #0B2A42;
+     overflow: hidden;
+     flex-direction: row;
+}
+
+.technologies{
+     height: 100%;
+     width: 90%;
+     margin-top: 20%;
+     padding: 5%;
+     opacity: 0;
+     animation: bottom 1s ease-in-out forwards;
+}
+
+.technologies:nth-child(1) {
+     animation-delay: 0.2s;
+ }
+ 
+ .technologies:nth-child(2) {
+     animation-delay: 0.4s;
+ }
+ 
+ .technologies:nth-child(3) {
+     animation-delay: 0.6s;
+ }
+ 
+ .technologies:nth-child(4) {
+     animation-delay: .8s;
+ }
+ 
+ .technologies:nth-child(5) {
+     animation-delay: 1s;
+ }
+ 
+ .technologies:nth-child(6) {
+     animation-delay: 1.2s;
+ }
+ .technologies:nth-child(7) {
+     animation-delay: 1.4s;
+ }
+
+.technologies h1{
+     font-size: 1.3rem;
+     margin-bottom: 5%;
+     text-align: center;
+}
+
+.tech-container {
+     height: 12%;
+     width: 30%;
+     background-color: #00BFFF;
+     border-radius: 10px;
+     display: inline-block;
+ }
+
+.tech-container img{
+     border-radius: 8px;
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     margin-bottom: 5%;
+}
+
+
+/*! PAGE 5 */
+
+#page5 {
+     background-color: #071826;
+     overflow: hidden;
+     min-height: 100vh;
+ }
+ 
+ .page5ContentWrapper {
+     height: 100%;
+     width: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+     position: relative;
+     padding: 10% 5%;
+     box-sizing: border-box;
+ }
+ 
+ .page5ContentWrapper h1 {
+     font-size: 1.8rem;
+     position: relative;
+     text-align: center;
+     margin-bottom: 2rem;
+     color: white;
+ }
+ 
+ .form {
+     position: relative;
+     width: 90%;
+     max-width: 500px;
+     margin: 0 auto;
+ }
+
+
+ .form input {
+     margin-top: 1rem;
+     height: 5vh;
+     width: 100%;
+     box-sizing: border-box;
+     padding: 10px;
+     border-radius: 5px;
+     border: 1px solid #ccc;
+     background-color: #fff;
+     font-family: inherit; 
+ }
+
+
+ .form textarea {
+     margin-top: 1rem;
+     height: 5vh;
+     width: 100%;
+     resize: none;
+     box-sizing: border-box;
+     padding: 10px;
+     border-radius: 5px;
+     border: 1px solid #ccc;
+     background-color: #fff;
+     font-family: inherit;
+ }
+ 
+ #mail {
+     margin-top: 1rem;
+     height: 20vh;
+     width: 100%;
+     border-radius: 5px;
+ }
+ 
+ #submitButton {
+     position: relative;
+     display: block;
+     margin: 1.5rem auto 0;
+     width: 50%;
+     padding: 10px 0;
+     border-radius: 15px;
+     border: 1px solid white;
+     box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.5);
+     background-color: transparent;
+     color: white;
+     font-weight: bold;
+     transition: all 0.3s ease;
+ }
+ 
+ #submitButton:hover {
+     cursor: pointer;
+     transform: scale(1.02);
+     background-color: black;
+     color: #00BFFF;
+ }
+
+.form:nth-child(1){
+     opacity: 0;
+     animation: right 1s ease-in-out .4s forwards;
+}
+.form:nth-child(2){
+     opacity: 0;
+     animation: left 1s ease-in-out .6s forwards;
+}
+.form:nth-child(3){
+     opacity: 0;
+     animation: right 1s ease-in-out .8s forwards;
+}
+.form:nth-child(4){
+     opacity: 0;
+     animation: bottom 1s ease-in-out 1s forwards;
+}
+.form:nth-child(5){
+     opacity: 0;
+     animation: bottom 1s ease-in-out 1s forwards;
+}
+
+/*! FOOTER */ 
+
+footer{
+     width: 100%;
+     height: 10vh;
+     background-color: #0B2A42 !important; 
+     color: white;
+
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+
+
+
+
+/*! ****************************************************************************************************************** */
+
+/*! RESPONSİVE */
+
+
+
+/* MOBİLE FİRST YAKLAŞIMI KULLANILDI. İLK TASARIM 320 PX İÇİN YAPILDI.*/
+/*todo 480PX, 768PX, 1024PX VE 1280PX İÇİN MEDİA QUERYLER EKLENECEK */
+
+
+
+/*! Büyük mobil cihazlar */
+@media screen and (min-width: 576px) {
+
+     /*! PAGE 1 */
+     .page1Content{
+          width: 60%;
+          left: 10%;
+     }
+
+     .page1ContentButtons{
+          width: 60%;
+          left: 10%;
+     }
+     .links{
+          width: 35%;
+          justify-content: space-between;
+     }
+     .menu a{
+          margin-top: 15%;
+     }
+     .menu p{
+          right: 10%;
+     }
+
+
+     /*! PAGE 2 */
+
+     .aboutMe{
+        margin-top: 20%;
+     }
+
+
+
+     /*! PAGE 3 */
+
+     .container-wrapper{
+          height: 90%;
+     }
+
+     /*! PAGE 4 */
+
+     .technologies{
+          margin-top: 10%;
+     }
+     .technologies h1{
+          font-size: 2rem;
+     }
+     .tech-container{
+          text-align: center;
+          height: 15%;
+          width: 25%;
+          position: relative;
+          left: 10%;
+     }
+
+
+     /*! PAGE 5 */
+
+
+}
+   
+   /*! Tabletler */
+   @media (min-width: 768px) {
+
+     /*! PAGE 1 */
+     .page1Content{
+          width: 50%;
+          left: 10%;
+     }
+
+     .page1ContentButtons{
+          width: 70%;
+          left: 10%;
+     }
+     .menu{
+          width: 40%;
+     }
+     .menu a{
+          margin-top: 10%;
+     }
+     .menu p{
+          bottom: 3%;
+          right: 10%;
+     }
+
+
+     /*! PAGE 2 */
+
+     .aboutMe{
+        margin-top: 10%;
+     }
+
+
+
+     /*! PAGE 3 */
+
+     .container-wrapper h1 {
+          font-size: 1.8rem;
+      }
+      
+      .container {
+          width: 90%;
+          padding: 4%;
+      }
+      
+      .container p {
+          font-size: 0.9rem;
+      }
+
+     /*! PAGE 4 */
+
+     .technologies{
+          margin-top: 10%;
+     }
+     .tech-container{
+          text-align: center;
+          height: 15%;
+          width: 25%;
+          position: relative;
+          left: 10%;
+     }
+
+
+     /*! PAGE 5 */
+
+
+}
+   
+   /* Orta masaüstü */
+   @media (min-width: 1200px) {
+
+     /*! PAGE 1 */
+     .page1Content{
+          width: 40%;
+          left: 10%;
+          top: 25%;
+          font-size: 1.2rem;
+     }
+     .page1Content h1 {
+          font-size: 2.4rem;
+     }
+     .page1Content h3{
+          font-size: 1.6rem;
+     }
+     .page1ContentButtons{
+          width: 70%;
+          left: 10%;
+     }
+     .header p{
+          font-size: 1.8rem;
+     }
+     .menu{
+          width: 20%;
+     }
+     .menu a{
+          margin-top: 10%;
+     }
+     .menu p{
+          bottom: 3%;
+          right: 10%;
+     }
+
+     .links{
+          bottom: 8%;
+     }
+     .links a{
+          font-size: 2rem;
+     }
+     .wrapper{
+         width: 60px;
+         height: 60px;
+     }
+
+     /*! PAGE 2*/
+     .container-wrapper h1 {
+          font-size: 3rem;
+     }
+     .aboutMe h1 {
+          font-size: 3.5rem;
+     }
+     .aboutMe h3 {
+          font-size: 2rem;
+     }
+     .aboutMe p {
+          font-size: 1.2rem;
+     }
+
+     /*! PAGE 3 */
+     .container span{
+          font-size: 1.2rem;
+     }
+     .container h3{
+          font-size: 1.5rem;
+     }
+     .container p{
+          font-size: 1.2rem;
+     }
+     /*! PAGE 5 */
+   }
+   
+   /* Büyük ekranlar */
+   @media (min-width: 1400px) {
+     /* Stiller burada */
+   }
+
+
+
+
+
+
+
+
+
+
+
+/*! ****************************************************************************************************************** */
+
+/*! KEYFRAMES */
+
+@keyframes opacity{
+     0%{
+          opacity: 0;
+     }
+     100%{
+          opacity: 1;
+     }
+}
+
+@keyframes top{
+     0%{
+          opacity: 0;
+          transform: translateY(-35px);
+     }
+     100%{
+          opacity: 1;
+          transform: translateY(0);
+     }
+}
+
+
+@keyframes bottom{
+     0%{
+          opacity: 0;
+          transform: translateY(30px);
+     }
+     100%{
+          opacity: 1;
+          transform: translateY(0);
+     }
+}
+
+
+@keyframes right{
+     0%{
+          opacity: 0;
+          transform: translateX(30px);
+     }
+     100%{
+          opacity: 1;
+          transform: translateX(0);
+     }
+}
+
+
+
+@keyframes left{
+     0%{
+          opacity: 0;
+          transform: translateX(-30px);
+     }
+     100%{
+          opacity: 1;
+          transform: translateX(0);
+     }
+}
+
+
+@keyframes scale{
+     0%{
+          opacity: 0;
+          scale: 1;
+     }
+     100%{
+          opacity: 1;
+          scale: 1.4;
+     }
+}
+
+@keyframes photo{
+     0%{
+          transform: translateY(-10%);
+     }
+     100%{
+          transform: translateY(0);
+     }
+}
