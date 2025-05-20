@@ -18,12 +18,12 @@ Farklı tasarım ve düzen fikirleri için ilham kaynağı olabilir.
 
 ### Canlı Önizleme:
 Projeler GitHub Pages üzerinden yayınlandığında buraya linkler eklenecektir:  
-<a href="https://alptekin0.github.io/Portfolio-Collection/portfolyo/" target="_blank">portfolio 1</a>  
-<a href="https://alptekin0.github.io/Portfolio-Collection/Portfolio%202/" target="_blank">portfolio 2</a>  
-<a href="https://alptekin0.github.io/Portfolio-Collection/portfolio%203/" target="_blank">portfolio 3</a>  
-<a href="https://alptekin0.github.io/Portfolio-Collection/Portfolio%20Main%20page%20example/" target="_blank">portfolio main-page-example</a>  
-<a href="https://alptekin0.github.io/Portfolio-Collection/porfolio%204/" target="_blank">portfolio 4</a>  
 
+[portfolio](https://alptekin0.github.io/Portfolio-Collection/portfolyo/)  
+[portfolio 2](https://alptekin0.github.io/Portfolio-Collection/Portfolio%202/)  
+[portfolio 3](https://alptekin0.github.io/Portfolio-Collection/portfolio%203/)  
+[portfolio main-page-example](https://alptekin0.github.io/Portfolio-Collection/Portfolio%20Main%20page%20example/)  
+[portfolio 4](https://alptekin0.github.io/Portfolio-Collection/porfolio%204/)  
 
 
 Bu projeler kişisel kullanım içindir. Dilersen kendi projelerine uyarlayabilir, öğrenme ve geliştirme amaçlı kullanabilirsin.
