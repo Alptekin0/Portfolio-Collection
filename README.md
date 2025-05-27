@@ -17,14 +17,14 @@ HTML/CSS/JS temellerini pekiştirmek isteyenler için örnek kod yapısı sağla
 Farklı tasarım ve düzen fikirleri için ilham kaynağı olabilir.
 
 ### Canlı Önizleme:
-Projeler GitHub Pages üzerinden yayınlandığında buraya linkler eklenecektir:  
+Projeler GitHub Pages üzerinden yayınlandığında buraya linkler eklenecektir. Linklere tıklayarak eklenen dosyaların yayınlanmış halini görebilirsiniz:  
 
 [portfolio](https://alptekin0.github.io/Portfolio-Collection/portfolyo/)  
 [portfolio 2](https://alptekin0.github.io/Portfolio-Collection/Portfolio%202/)  
 [portfolio 3](https://alptekin0.github.io/Portfolio-Collection/portfolio%203/)  
 [portfolio main-page-example](https://alptekin0.github.io/Portfolio-Collection/Portfolio%20Main%20page%20example/)  
 [portfolio 4](https://alptekin0.github.io/Portfolio-Collection/porfolio%204/)  
-[portfolio 4](https://alptekin0.github.io/Portfolio-Collection/portfolio%205/)  
+[portfolio 5](https://alptekin0.github.io/Portfolio-Collection/portfolio%205/)  
 
 
 
